@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'AMRAdapterPangle'
+  s.name             = 'AMRAdapterPangle-Beta'
   s.version          = '5.8.0.7'
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
 														Copyright 2016
@@ -19,12 +19,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_versions = ['5']
   s.vendored_frameworks = 'AMRAdapterTiktok/Libs/AMRAdapterTiktok.xcframework'  
-  s.dependency 'AMRSDK', '~> 1.5.33'
+  s.dependency 'AMRSDK-Beta', '~> 1.5.41'
   s.dependency 'Ads-Global', '5.8.0.7'
   s.xcconfig = {
-    'OTHER_LDFLAGS' => '-ObjC -lc++',
-    "VALID_ARCHS": "armv7 armv7s x86_64 arm64",
-    'VALID_ARCHS[sdk=iphoneos*]' => 'armv7 arm64',
-    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64'
+    "VALID_ARCHS": "armv7 armv7s x86_64 arm64"
   }
 end

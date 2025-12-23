@@ -3,6 +3,10 @@
 Changelog for AMRAdapterPangle. 
 Ads-Global [changelog](https://www.pangleglobal.com/integration/integrate-pangle-sdk-for-ios)
 
+## [7.8.0.7] - 2025-12-23
+### Updated
+- Offical release for Ads-Global 7.8.0.7
+
 ## [7.6.0.8] - 2025-12-12
 ### Updated
 - Native ad assets updated.

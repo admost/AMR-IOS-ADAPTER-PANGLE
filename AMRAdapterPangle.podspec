@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AMRAdapterPangle'
-  s.version          = '7.8.0.7'
+  s.version          = '7.9.0'
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
 														Copyright 2016
 														Admost Mediation Limited.
@@ -19,9 +19,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.swift_versions = ['5']
   s.vendored_frameworks = 'AMRAdapterTiktok/Libs/AMRAdapterTiktok.xcframework'  
-  s.dependency 'AMRSDK', '~> 1.5.78'
-  s.dependency 'Ads-Global', '7.8.0.7'
-  s.xcconfig = {
-    "VALID_ARCHS": "armv7 armv7s x86_64 arm64"
+  s.dependency 'AMRSDK', '~> 1.5.84'
+  s.dependency 'Ads-Global', '7.9.0.8'
+  s.pod_target_xcconfig = {
+    "VALID_ARCHS": "arm64 x86_64",
+    'VALID_ARCHS[sdk=iphoneos*]' => 'arm64',
+    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64'
   }
 end

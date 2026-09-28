@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/admost/AMR-IOS-SDK.git", from: "1.5.84"),
-        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", .exact("8.2.0-release.9"))
+        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", .exact("8.3.0-release.8"))
     ],
     targets: [
         .target(
@@ -32,8 +32,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AMRAdapterPangleLib",
-            url: "https://github.com/admost/AMR-IOS-ADAPTER-PANGLE/releases/download/8.2.1/AMRAdapterTiktok.xcframework.zip",
-            checksum: "142ef9005330db3c8137d6f477125a9b6556779efc8a4687d581354ec7a01b4e"
+            url: "https://github.com/admost/AMR-IOS-ADAPTER-PANGLE/releases/download/8.3.0/AMRAdapterTiktok.xcframework.zip",
+            checksum: "1a44359db8c690a957d176d031c63b65589f8326529b96e6b64f13923155611d"
         )
     ]
 )
